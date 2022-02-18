@@ -10,19 +10,15 @@
 
 This project uses analytics from the World Bank to create an App that will display all the data for a given country (or two) for a huge array of indicators.
 
-![Screenshot 2022-02-18 at 12 25 15](https://user-images.githubusercontent.com/94084605/154683920-9ef498a6-9178-4b56-a7fa-34381f438dac.png)
+<img src="Search_page.png"
+     alt="Search page screenshot"
+     style="float: left; margin-right: 10px;" />
 
 It contains a login and register system too, which allows users to create accounts in order to track previous searches, which can then be accessed from the Home page.
-
-<img width="1431" alt="Screenshot 2022-02-18 at 12 36 28" src="https://user-images.githubusercontent.com/94084605/154684110-dc7491e1-52d4-46fb-aa70-fcd42df716ad.png">
 
 <img src="Login_page.png"
      alt="Login page screenshot"
      style="float: left; margin-right: 10px;" >
-
-<img src="Search_page.png"
-     alt="Search page screenshot"
-     style="float: left; margin-right: 10px;" />
 
 Using administrator credentials on the login page will give access to the admin area, which displays all searches made to the site.
 
@@ -49,3 +45,7 @@ $ cd ../world-bank-app
 $ yarn install
 $ yarn start
 ```
+
+## License
+
+The license for this software can be accessed [here](LICENSE.md)

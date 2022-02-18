@@ -10,6 +10,8 @@
 
 This project uses analytics from the World Bank to create an App that will display all the data for a given country (or two) for a huge array of indicators. Using the '+' button will open the option to search for a second country. This will allow you to compare two countries for a given indicator, or all of them. In order to search for all indicators, leave the respective field blank. Specific years can also be searched for using the 'To' and 'From' toggles. Data used for this project can be obtained on Kaggle from this link: https://www.kaggle.com/kaggle/world-development-indicators 
 
+Access to historic searches is only available once you have created an account and started making queries. In order to view previous searches, toggle the dropdown marked ```History``` on the Header when logged in. The dropdown items will contain all information about the search, including the first time it was searched for. Clicking any one of these past searches will show you the results of that search.
+
 <img src="SearchPage.png"
      alt="Search page screenshot"
      style="float: left; margin-right: 10px;" />

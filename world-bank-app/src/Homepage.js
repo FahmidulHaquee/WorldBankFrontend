@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Register from "./Register";
-import LoginPage from "./Components/LoginPage";
+import Register from "./Components/Register/Register";
+import LoginPage from "./Components/LoginPage/LoginPage";
 
 class App extends React.Component {
   constructor(props) {

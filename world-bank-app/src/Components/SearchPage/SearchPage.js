@@ -5,7 +5,7 @@ import Network from "../Network";
 import { Typeahead } from "react-bootstrap-typeahead";
 import { withCookies, Cookies } from "react-cookie";
 import { instanceOf } from "prop-types";
-import Header from "../Header";
+import Header from "../Header/Header";
 import Spinner from "react-bootstrap/Spinner";
 
 class SearchPage extends React.Component {
@@ -159,6 +159,7 @@ class SearchPage extends React.Component {
       <Row className="compare-input">
         <Form.Group className="mb-3" id="form-country-search" as={Col}>
           <Typeahead
+            data-testid="country-input"
             onChange={(selected) => this.setState({ countryCompare: selected })}
             placeholder="Enter a Country..."
             size="lg"
@@ -185,6 +186,14 @@ class SearchPage extends React.Component {
                   id="country"
                 />
                 {this.state.compare && this.comparedCountryForm()}
+                <Button
+                  data-testid="add-country-button"
+                  size="sm"
+                  variant="secondary"
+                  onClick={this.activateCompare}
+                >
+                  {this.state.compare ? "-" : "+"}
+                </Button>
                 <div className="compare-btn">
                   <Button
                     size="sm"
@@ -199,6 +208,7 @@ class SearchPage extends React.Component {
             <Col xs={5}>
               <Form.Group className="mb-3">
                 <Typeahead
+                  data-testid="indicator-input"
                   onChange={(selected) =>
                     this.setState({ indicator: selected })
                   }
@@ -214,6 +224,7 @@ class SearchPage extends React.Component {
             <Col xs={2}>
               <Form.Group className="mb-3">
                 <Form.Control
+                  data-testid="start-year-input"
                   placeholder="Start Year"
                   aria-label="Start Year"
                   id="startYear"
@@ -228,6 +239,7 @@ class SearchPage extends React.Component {
             <Col xs={2}>
               <Form.Group className="mb-3">
                 <Form.Control
+                  data-testid="end-year-input"
                   placeholder="End Year"
                   aria-label="End Year"
                   id="endYear"
@@ -263,7 +275,7 @@ class SearchPage extends React.Component {
             ></Header>
           </header>
         </div>
-        <article className="spacing">
+        <article data-testid="welcome-article" className="spacing">
           <h4>Welcome to the World Bank Database!</h4>
           <p>Explore country development indicators from around the world.</p>
           <p>To use:</p>

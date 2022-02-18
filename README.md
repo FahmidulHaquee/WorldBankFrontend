@@ -8,13 +8,13 @@
 
 ## Introduction
 
-This project uses analytics from the World Bank to create an App that will display all the data for a given country (or two) for a huge array of indicators.
+This project uses analytics from the World Bank to create an App that will display all the data for a given country (or two) for a huge array of indicators. Using the '+' button will open the option to search for a second country. This will allow you to compare two countries for a given indicator, or all of them. In order to search for all indicators, leave the respective field blank. Specific years can also be searched for using the 'To' and 'From' toggles.
 
 <img src="SearchPage.png"
      alt="Search page screenshot"
      style="float: left; margin-right: 10px;" />
 
-It contains a login and register system too, which allows users to create accounts in order to track previous searches, which can then be accessed from the Home page.
+It contains a login and register system too, which allows users to create accounts in order to track previous searches, which can then be accessed from the Home page. Passwords are encrypted using the [bcrypt](https://deno.land/x/bcrypt@v0.3.0/mod.ts) package, and stored in a hosted database along with the salt used.
 
 <img src="LoginPage.png"
      alt="Login page screenshot"
@@ -45,6 +45,8 @@ $ cd ../world-bank-app
 $ yarn install
 $ yarn start
 ```
+
+As well as this. the related backend Server will also be required in order for the App to function properly. The backend repository for this project can be found [here](https://github.com/tomw13/WorldBankBackend). We recommend cloning both repositories to your local machine for ease of access.
 
 ## License
 

@@ -10,13 +10,13 @@
 
 This project uses analytics from the World Bank to create an App that will display all the data for a given country (or two) for a huge array of indicators.
 
-<img src="Search_page.png"
+<img src="SearchPage.png"
      alt="Search page screenshot"
      style="float: left; margin-right: 10px;" />
 
 It contains a login and register system too, which allows users to create accounts in order to track previous searches, which can then be accessed from the Home page.
 
-<img src="Login_page.png"
+<img src="LoginPage.png"
      alt="Login page screenshot"
      style="float: left; margin-right: 10px;" >
 

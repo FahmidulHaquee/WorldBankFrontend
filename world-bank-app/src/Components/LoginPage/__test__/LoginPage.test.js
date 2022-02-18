@@ -20,12 +20,11 @@ afterEach(() => {
 
 describe("Login page form should include all elements", () => {
   test("Username form element must load", () => {
-    act(() => {
       render(
         <Router>
           <LoginPage />
-        </Router>,
-        container
+        </Router>
+  
       );
     });
     const usernameInput = screen.getByPlaceholderText("Enter username");

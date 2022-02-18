@@ -4,7 +4,7 @@ import { instanceOf } from "prop-types";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import Network from "./Network";
+import Network from "../Network";
 
 class Header extends React.Component {
   static propTypes = {
@@ -83,17 +83,25 @@ class Header extends React.Component {
       <div className="header-buttons">
         <div id="home-logout-btn">
           <Link to="/home">
-            <Button variant="primary" onClick={() => this.props.setData()}>
+            <Button
+              data-testid="home-button"
+              variant="primary"
+              onClick={() => this.props.setData()}
+            >
               Home
             </Button>
           </Link>
           <Link to="/login">
-            <Button variant="primary" onClick={() => this.logInOrExitAdmin()}>
+            <Button
+              data-testid="log-out-button"
+              variant="primary"
+              onClick={() => this.logInOrExitAdmin()}
+            >
               Log Out
             </Button>
           </Link>
         </div>
-        <div className="history-btn">
+        <div data-testid="history-button" className="history-btn">
           <Dropdown onSelect={this.fireHistoricSearch}>
             <Dropdown.Toggle id="history-dropdown" variant="secondary">
               History

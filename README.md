@@ -1,5 +1,7 @@
 # World Bank Frontend
 
+![GitHub all releases](https://img.shields.io/github/downloads/FahmidulHaquee/WorldBankFrontend/total?logo=GitHub)
+
 ## Table of Contents
 
 - [Introduction](#introduction)

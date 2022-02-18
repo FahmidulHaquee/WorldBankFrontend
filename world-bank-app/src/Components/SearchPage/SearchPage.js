@@ -186,16 +186,10 @@ class SearchPage extends React.Component {
                   id="country"
                 />
                 {this.state.compare && this.comparedCountryForm()}
-                <Button
-                  data-testid="add-country-button"
-                  size="sm"
-                  variant="secondary"
-                  onClick={this.activateCompare}
-                >
-                  {this.state.compare ? "-" : "+"}
-                </Button>
+
                 <div className="compare-btn">
                   <Button
+                    data-testid="add-country-button"
                     size="sm"
                     variant="secondary"
                     onClick={this.activateCompare}

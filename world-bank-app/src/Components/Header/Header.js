@@ -114,11 +114,6 @@ class Header extends React.Component {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-        <Link to="/login">
-          <Button variant="primary" onClick={() => this.logInOrExitAdmin()}>
-            Log Out
-          </Button>
-        </Link>
       </div>
     );
   }

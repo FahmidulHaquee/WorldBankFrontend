@@ -2,6 +2,9 @@
 
 ![GitHub all releases](https://img.shields.io/github/downloads/FahmidulHaquee/WorldBankFrontend/total?logo=GitHub)
 ![Twitter Follow](https://img.shields.io/twitter/follow/SigmaLabs?style=social)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@babel/core)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/FahmidulHaquee)
+![APM](https://img.shields.io/apm/l/npm)
 
 ## Table of Contents
 

@@ -30,7 +30,6 @@ class Admin extends React.Component {
 
   getAllSearches = async () => {
     const response = await this.network.getAllSearches();
-    console.log(response);
     this.setState({ searches: response.rows });
   };
 
@@ -51,6 +50,7 @@ class Admin extends React.Component {
   fireHistoricSearch = async (e) => {
     this.alternateLoading();
     const { searches } = this.state;
+    console.log(searches);
     let { country, indicator, start_year, end_year } =
       searches[Number(e.target.value)];
     indicator = indicator ? indicator : "";
@@ -83,7 +83,7 @@ class Admin extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="spacing">
         <header>
           <Button onClick={() => this.props.exitAdmin()} variant="danger">
             Exit

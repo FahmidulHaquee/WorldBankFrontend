@@ -2,7 +2,6 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import invalidChars from "../../invalidChars";
-import Alert from "react-bootstrap/Alert";
 import { Link } from "react-router-dom";
 import Network from "../Network";
 import { withCookies, Cookies } from "react-cookie";
@@ -114,6 +113,10 @@ class Register extends React.Component {
 
   getRegister() {
     return (
+      <div>
+        <div className="spacing" id="login">
+          <h1>Register</h1>
+        </div>
       <div className="spacing">
         <div className="registerPage">
           <Form noValidate onSubmit={(e) => this.handleSubmit(e)}>
@@ -219,6 +222,7 @@ class Register extends React.Component {
           </Form>
         </div>
       </div>
+              </div>
     );
   }
 

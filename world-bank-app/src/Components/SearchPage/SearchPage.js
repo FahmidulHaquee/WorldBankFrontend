@@ -134,7 +134,13 @@ class SearchPage extends React.Component {
 
   getLoadingComponent = () => {
     return (
-      <Spinner size="lg" animation="border" role="status" variant="dark" />
+      <Spinner
+        size="lg"
+        animation="border"
+        role="status"
+        variant="dark"
+        id="loading"
+      />
     );
   };
 
@@ -150,7 +156,7 @@ class SearchPage extends React.Component {
 
   comparedCountryForm = () => {
     return (
-      <Row>
+      <Row className="compare-input">
         <Form.Group className="mb-3" id="form-country-search" as={Col}>
           <Typeahead
             data-testid="country-input"
@@ -167,11 +173,10 @@ class SearchPage extends React.Component {
 
   renderSearchForm = () => {
     return (
-      // <div className="spacing">
       <div className="search-section">
         <Form onSubmit={this.handleSubmit}>
           <Row>
-            <Col xs={4}>
+            <Col xs={3}>
               <Form.Group className="mb-3" id="form-country-search">
                 <Typeahead
                   onChange={(selected) => this.setState({ country: selected })}
@@ -189,9 +194,18 @@ class SearchPage extends React.Component {
                 >
                   {this.state.compare ? "-" : "+"}
                 </Button>
+                <div className="compare-btn">
+                  <Button
+                    size="sm"
+                    variant="secondary"
+                    onClick={this.activateCompare}
+                  >
+                    {this.state.compare ? "-" : "+"}
+                  </Button>
+                </div>
               </Form.Group>
             </Col>
-            <Col xs={6}>
+            <Col xs={5}>
               <Form.Group className="mb-3">
                 <Typeahead
                   data-testid="indicator-input"
@@ -238,13 +252,13 @@ class SearchPage extends React.Component {
               </Form.Group>
             </Col>
           </Row>
-
-          <Button data-testid="submit-button" variant="primary" type="submit">
-            Submit
-          </Button>
+          <div className="search-btn">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </div>
         </Form>
       </div>
-      // </div>
     );
   };
 

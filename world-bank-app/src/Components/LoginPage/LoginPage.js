@@ -53,8 +53,15 @@ class LoginPage extends React.Component {
     return (
       <div>
         <header className="spacing">
-          <h1>Welcome to the World Bank Dashboard!</h1>
-          <img src="http://www.worldbank.org/" alt="WBD logo"></img>
+          <div className="login-header">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/The_World_Bank_logo.svg/1280px-The_World_Bank_logo.svg.png"
+              alt="WBD logo"
+              width="260"
+              height="60"
+            ></img>
+            <h1>Welcome to the World Bank Dashboard!</h1>
+          </div>
         </header>
         <div className="spacing">
           <h5>Please login to search through the World Bank Database.</h5>
@@ -67,7 +74,6 @@ class LoginPage extends React.Component {
                 <Form.Group className="mb-3">
                   <Form.Label className="username-label">Username</Form.Label>
                   <Form.Control
-                    data-testid="username-control"
                     className="username-input"
                     type="text"
                     placeholder="Enter email"
@@ -80,7 +86,6 @@ class LoginPage extends React.Component {
                 <Form.Group className="mb-3">
                   <Form.Label className="password-label">Password</Form.Label>
                   <Form.Control
-                    data-testid="password-control"
                     className="password-input"
                     type="password"
                     placeholder="Password"
@@ -89,12 +94,7 @@ class LoginPage extends React.Component {
                     onChange={(e) => this.handleChange(e)}
                   />
                 </Form.Group>
-                <Button
-                  data-testid="login-button"
-                  className="example"
-                  variant="primary"
-                  type="submit"
-                >
+                <Button className="example" variant="primary" type="submit">
                   Submit
                 </Button>
                 <Form.Group className="mb-3" id="register-redirect">
@@ -102,9 +102,7 @@ class LoginPage extends React.Component {
                     Don't have an account?
                   </Form.Label>
                   <Link to="/register">
-                    <Button data-testid="register-button" variant="primary">
-                      Create an Account
-                    </Button>
+                    <Button variant="primary">Create an Account</Button>
                   </Link>
                 </Form.Group>
               </Form>

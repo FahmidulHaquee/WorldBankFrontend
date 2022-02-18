@@ -1,6 +1,7 @@
 # World Bank Frontend
 
 ![GitHub all releases](https://img.shields.io/github/downloads/FahmidulHaquee/WorldBankFrontend/total?logo=GitHub)
+![Twitter Follow](https://img.shields.io/twitter/follow/SigmaLabs?style=social)
 
 ## Table of Contents
 
